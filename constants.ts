@@ -2,68 +2,489 @@ import { ServiceItem, ServiceCategory } from './types';
 
 export const INITIAL_SERVICES: ServiceItem[] = [
   {
-    id: '1',
-    name: 'Cắt da tay & Sơn thường',
-    category: ServiceCategory.HANDS,
-    price: 150000,
-    duration: 30,
-    description: 'Làm sạch da thừa quanh móng, tạo form móng chuẩn và sơn màu thường cao cấp.'
+    id: "SP000135",
+    name: "DẶM MI 100K",
+    price: 110000
   },
   {
-    id: '2',
-    name: 'Sơn Gel Trơn',
-    category: ServiceCategory.HANDS,
-    price: 250000,
-    duration: 45,
-    description: 'Sơn gel bền màu, bóng đẹp, giữ màu lên đến 3 tuần.'
+    id: "SP000134",
+    name: "DẶM MI 90K",
+    price: 99000
   },
   {
-    id: '3',
-    name: 'Chà gót chân hồng',
-    category: ServiceCategory.FEET,
-    price: 300000,
-    duration: 45,
-    description: 'Loại bỏ tế bào chết, vết chai sần, giúp gót chân mềm mại và hồng hào.'
+    id: "SP000133",
+    name: "DẶM MI 80K",
+    price: 88000
   },
   {
-    id: '4',
-    name: 'Đắp bột Ombre',
-    category: ServiceCategory.EXTENSIONS,
-    price: 550000,
-    duration: 90,
-    description: 'Kỹ thuật đắp bột loang màu nghệ thuật, tạo hiệu ứng chuyển màu tự nhiên.'
+    id: "SP000132",
+    name: "WAX BROW",
+    price: 55000
   },
   {
-    id: '5',
-    name: 'Vẽ Art (4 ngón)',
-    category: ServiceCategory.NAIL_ART,
-    price: 100000,
-    duration: 20,
-    description: 'Vẽ họa tiết theo yêu cầu hoặc mẫu có sẵn cho 4 ngón tay.'
+    id: "SP000131",
+    name: "THÁO MI",
+    price: 22000
   },
   {
-    id: '6',
-    name: 'Massage tay thư giãn',
-    category: ServiceCategory.SPA,
-    price: 200000,
-    duration: 30,
-    description: 'Massage bấm huyệt bàn tay và cánh tay với tinh dầu thiên nhiên.'
+    id: "SP000130",
+    name: "MI HYDRid",
+    price: 220000
   },
   {
-    id: '7',
-    name: 'Đính đá full móng (1 ngón)',
-    category: ServiceCategory.NAIL_ART,
-    price: 50000,
-    duration: 15,
-    description: 'Đính đá khối, đá chân bằng cao cấp sáng lấp lánh.'
+    id: "SP000129",
+    name: "MI THIÊN THẦN",
+    price: 187000
   },
   {
-    id: '8',
-    name: 'Úp móng nghệ thuật',
-    category: ServiceCategory.EXTENSIONS,
-    price: 400000,
-    duration: 60,
-    description: 'Sử dụng móng úp cao cấp, form chuẩn, không hại móng thật.'
+    id: "SP000128",
+    name: "MI ANIME",
+    price: 220000
+  },
+  {
+    id: "SP000127",
+    name: "MI ĐUÔI CÁ",
+    price: 209000
+  },
+  {
+    id: "SP000126",
+    name: "MI KATUN",
+    price: 198000
+  },
+  {
+    id: "SP000125",
+    name: "MI VOLUME 5D",
+    price: 220000
+  },
+  {
+    id: "SP000124",
+    name: "MI VOLUME 4D",
+    price: 209000
+  },
+  {
+    id: "SP000123",
+    name: "MI VOLUME 3D",
+    price: 198000
+  },
+  {
+    id: "SP000122",
+    name: "MI SOLE THÁI",
+    price: 187000
+  },
+  {
+    id: "SP000121",
+    name: "MI LÔNG THỎ",
+    price: 198000
+  },
+  {
+    id: "SP000120",
+    name: "MI EM BÉ",
+    price: 187000
+  },
+  {
+    id: "SP000119",
+    name: "MI CLASSIC",
+    price: 165000
+  },
+  {
+    id: "SP000118",
+    name: "GỘI SẠCH",
+    price: 54000
+  },
+  {
+    id: "SP000117",
+    name: "COMBO GỘI ĐẦU 3",
+    price: 175000
+  },
+  {
+    id: "SP000116",
+    name: "COMBO GỘI ĐẦU 2",
+    price: 120000
+  },
+  {
+    id: "SP000115",
+    name: "COMBO GỘI ĐẦU 1",
+    price: 76000
+  },
+  {
+    id: "SP000114",
+    name: "PHỤ THU CHÂN KHÁC",
+    price: 11000
+  },
+  {
+    id: "SP000113",
+    name: "PHỤ THU TAY KHÁC",
+    price: 11000
+  },
+  {
+    id: "SP000112",
+    name: "BIAB CHÂN 1 LỚP",
+    price: 33000
+  },
+  {
+    id: "SP000111",
+    name: "BIAB TAY 1 LỚP",
+    price: 33000
+  },
+  {
+    id: "SP000110",
+    name: "CỨNG MÓNG CHÂN",
+    price: 11000
+  },
+  {
+    id: "SP000109",
+    name: "VẼ ĐƠN GIẢN CHÂN",
+    price: 33000
+  },
+  {
+    id: "SP000108",
+    name: "CẮT DA CHÂN",
+    price: 22000
+  },
+  {
+    id: "SP000107",
+    name: "TRÁNG GƯƠNG 1 NGÓN",
+    price: 2000
+  },
+  {
+    id: "SP000106",
+    name: "CHÀ GÓT",
+    price: 132000
+  },
+  {
+    id: "SP000105",
+    name: "CẮT DA TAY CHÂN PHẠM HÙNG",
+    price: 66000
+  },
+  {
+    id: "SP000104",
+    name: "EYELASH LIFT KOREA",
+    price: 165000
+  },
+  {
+    id: "SP000103",
+    name: "TINT BROW",
+    price: 110000
+  },
+  {
+    id: "SP000102",
+    name: "BROW LAMINATION",
+    price: 198000
+  },
+  {
+    id: "SP000101",
+    name: "RẠCH SỎI - KỀM AAA",
+    price: 61000
+  },
+  {
+    id: "SP000100",
+    name: "LÊ VĂN HƯU - KỀM AAA",
+    price: 61000
+  },
+  {
+    id: "SP000099",
+    name: "PHẠM HÙNG - KỀM AAA",
+    price: 61000
+  },
+  {
+    id: "SP000098",
+    name: "ĐẮP GEL - SƠN - VẼ",
+    price: 275000
+  },
+  {
+    id: "SP000097",
+    name: "MÓNG UP + SƠN",
+    price: 143000
+  },
+  {
+    id: "SP000090",
+    name: "ĐẮP BỘT MỚI CHÂN",
+    price: 275000
+  },
+  {
+    id: "SP000089",
+    name: "REFILL BỘT CHÂN KO CẮT DA",
+    price: 165000
+  },
+  {
+    id: "SP000088",
+    name: "ĐẮP BỘT TRÊN MÓNG THẬT",
+    price: 220000
+  },
+  {
+    id: "SP000087",
+    name: "ĐẮP GEL TRÊN MÓNG THẬT",
+    price: 242000
+  },
+  {
+    id: "SP000086",
+    name: "THÁO MÓNG UP",
+    price: 33000
+  },
+  {
+    id: "SP000080",
+    name: "REFILL 2 NGÓN CHÂN",
+    price: 33000
+  },
+  {
+    id: "SP000079",
+    name: "ĐẮP 2 NGÓN CHÂN",
+    price: 66000
+  },
+  {
+    id: "SP000077",
+    name: "ĐẮP MỚI 1 NGÓN TAY",
+    price: 33000
+  },
+  {
+    id: "SP000075",
+    name: "ẨN GIẤY BÓNG KÍNH",
+    price: 33000
+  },
+  {
+    id: "SP000074",
+    name: "VẼ CƠ BẢN",
+    price: 22000
+  },
+  {
+    id: "SP000071",
+    name: "DŨA",
+    price: 55000
+  },
+  {
+    id: "SP000070",
+    name: "ĐẮP GEL 2 NGÓN CẮT DA SƠN VẼ",
+    price: 187000
+  },
+  {
+    id: "SP000069",
+    name: "ĐẮP GEL 2 NGÓN CẮT DA SƠN",
+    price: 121000
+  },
+  {
+    id: "SP000068",
+    name: "SƠN CHÂN",
+    price: 66000
+  },
+  {
+    id: "SP000067",
+    name: "SƠN TAY",
+    price: 66000
+  },
+  {
+    id: "SP000062",
+    name: "ĐẮP BỘT MỚI TAY KO CẮT DA",
+    price: 253000
+  },
+  {
+    id: "SP000061",
+    name: "ĐẮP BỘT MỚI TAY",
+    price: 275000
+  },
+  {
+    id: "SP000059",
+    name: "ĐẮP BỘT 2 NGÓN CHÂN CẮT DA SƠN VẼ",
+    price: 187000
+  },
+  {
+    id: "SP000058",
+    name: "ĐẮP BỘT 2 NGÓN CHÂN CẮT DA SƠN",
+    price: 154000
+  },
+  {
+    id: "SP000057",
+    name: "FILL 2 NGÓN CHÂN CẮT DA SƠN",
+    price: 121000
+  },
+  {
+    id: "SP000056",
+    name: "REFILL GEL TAY",
+    price: 187000
+  },
+  {
+    id: "SP000055",
+    name: "REFILL BỘT TAY",
+    price: 176000
+  },
+  {
+    id: "SP000054",
+    name: "ĐẮP 1 NGÓN CHÂN CÁI",
+    price: 33000
+  },
+  {
+    id: "SP000053",
+    name: "ĐẮP 1 NGÓN MỚI TAY",
+    price: 11000
+  },
+  {
+    id: "SP000052",
+    name: "CHARM HỘT CHÂN",
+    price: 11000
+  },
+  {
+    id: "SP000051",
+    name: "CHARM HỘT TAY",
+    price: 11000
+  },
+  {
+    id: "SP000045",
+    name: "REFILL GEL CHÂN",
+    price: 187000
+  },
+  {
+    id: "SP000044",
+    name: "REFILL BỘT CHÂN KO CẮT DA",
+    price: 154000
+  },
+  {
+    id: "SP000043",
+    name: "REFILL BỘT CHÂN",
+    price: 176000
+  },
+  {
+    id: "SP000042",
+    name: "REFILL BỘT - KHÔNG CẮT DA 150K",
+    price: 165000
+  },
+  {
+    id: "SP000041",
+    name: "REFILL BỘT - KHÔNG CẮT DA 140K",
+    price: 154000
+  },
+  {
+    id: "SP000040",
+    name: "REFILL GEL - KHÔNG CẮT DA 160K",
+    price: 176000
+  },
+  {
+    id: "SP000039",
+    name: "REFILL GEL - KHÔNG CẮT DA 150K",
+    price: 165000
+  },
+  {
+    id: "SP000038",
+    name: "CỨNG MÓNG TAY",
+    price: 11000
+  },
+  {
+    id: "SP000036",
+    name: "CẮT DA PHẠM HÙNG",
+    price: 33000
+  },
+  {
+    id: "SP000034",
+    name: "NHÚNG MỚI CÓ GẮN MÓNG",
+    price: 220000
+  },
+  {
+    id: "SP000033",
+    name: "SỬA MÓNG",
+    price: 17000
+  },
+  {
+    id: "SP000032",
+    name: "KÉO FORM",
+    price: 33000
+  },
+  {
+    id: "SP000031",
+    name: "SƠN 1 NGÓN",
+    price: 11000
+  },
+  {
+    id: "SP000030",
+    name: "MÓNG ÚP 1 NGÓN",
+    price: 11000
+  },
+  {
+    id: "SP000029",
+    name: "THÁO MÓNG ÚP",
+    price: 44000
+  },
+  {
+    id: "SP000027",
+    name: "NHÚNG BỘT",
+    price: 176000
+  },
+  {
+    id: "SP000025",
+    name: "REFILL 1 NGÓN",
+    price: 17000
+  },
+  {
+    id: "SP000024",
+    name: "ĐỔI FORM",
+    price: 44000
+  },
+  {
+    id: "SP000021",
+    name: "ĐÁ CHARM",
+    price: 11000
+  },
+  {
+    id: "SP000020",
+    name: "ÚP 2 NGÓN CÁI CHÂN",
+    price: 33000
+  },
+  {
+    id: "SP000018",
+    name: "GEL CHÂN ĐẮP MỚI 2 NGÓN CÁI",
+    price: 66000
+  },
+  {
+    id: "SP000017",
+    name: "GEL REFILL - GẮN THÊM NGÓN",
+    price: 11000
+  },
+  {
+    id: "SP000016",
+    name: "GEL REFILL",
+    price: 187000
+  },
+  {
+    id: "SP000015",
+    name: "GEL ĐẮP MỚI",
+    price: 275000
+  },
+  {
+    id: "SP000014",
+    name: "COMBO CẮT DA [ TAY + CHÂN ]",
+    price: 55000
+  },
+  {
+    id: "SP000009",
+    name: "BỘT ĐẮP MỚI [ KHÔNG CẮT DA ]",
+    price: 253000
+  },
+  {
+    id: "SP000008",
+    name: "CẮT DA TAY",
+    price: 22000
+  },
+  {
+    id: "SP000006",
+    name: "VẼ CUTE",
+    price: 44000
+  },
+  {
+    id: "SP000005",
+    name: "VẼ ĐƠN GIẢN TAY",
+    price: 33000
+  },
+  {
+    id: "SP000003",
+    name: "BỘT REFILL [ GẮN NGÓN ]",
+    price: 11000
+  },
+  {
+    id: "SP000002",
+    name: "BỘT REFILL",
+    price: 176000
+  },
+  {
+    id: "SP000001",
+    name: "BỘT ĐẮP MỚI",
+    price: 275000
   }
 ];
 

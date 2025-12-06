@@ -124,7 +124,7 @@ function App() {
           <div className="flex justify-between items-center mb-4">
             <div>
               <h1 className="text-3xl font-serif font-bold text-rose-900 tracking-tight">
-                Glamour Nail Spa
+                ELBI BEAUTY
               </h1>
               <p className="text-rose-500 text-sm font-medium mt-1">Bảng giá dịch vụ chính thức</p>
             </div>
